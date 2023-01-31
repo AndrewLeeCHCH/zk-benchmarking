@@ -11,7 +11,7 @@ pub struct Job {
 pub fn new_jobs() -> Vec<<Job as Benchmark>::Spec> {
     let mut rand = StdRng::seed_from_u64(1337);
     let mut jobs = Vec::new();
-    for job_size in [1024, 2048, 4096, 8192] {
+    for job_size in [1, 2, 4, 8, 16, 32, 64, 128, 256, 1024, 2048] {
         let mut guest_input = vec![0; job_size];
         for i in 0..guest_input.len() {
             guest_input[i] = rand.next_u32() as u8;

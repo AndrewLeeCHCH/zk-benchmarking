@@ -8,7 +8,8 @@ pub struct Job {
 }
 
 pub fn new_jobs() -> Vec<<Job as Benchmark>::Spec> {
-    vec![1, 10, 100]
+    // vec![1, 2, 4, 8, 16, 32, 64, 128, 256, 1024]
+    vec![]
 }
 
 const METHOD_ID: &'static [u8] = risczero_benchmark_methods::ITER_SHA2_ID;

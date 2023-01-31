@@ -26,7 +26,7 @@ echo "CSV path: ${CSV_PATH}"
 
 ######################################################################
 #             Team              Directory       Command
-run_benchmark "Polygon Miden"   "miden"         "cargo run --release -- --out ${CSV_PATH} all"
+# run_benchmark "Polygon Miden"   "miden"         "cargo run --release -- --out ${CSV_PATH} all"
 run_benchmark "RISC Zero"       "risczero"      "cargo run --release -- --out ${CSV_PATH} all"
 
 # Print the date and time in GMT
